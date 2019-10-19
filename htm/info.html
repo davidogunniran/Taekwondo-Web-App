@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Info</title>
+    <meta name="author" content="">
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/tkd.css">
+    <!-- end of css -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary btna">Export Games/Divisions/Players data to Excel file</button>
+                <button type="button" class="btn btn-primary btna">Import Games/Divisions/Players data from Excel file</button>
+                <button type="button" class="btn btn-primary btna">Exit</button>
+            </div>
+            <div class="topnav">
+                <a href="Games Planner.html">Games Planner</a>
+                <a href="PlayersManager.html">Players Manager</a>
+                <a href="View Draw.html">View Draw</a>
+                <a href="DivisionsPlanner.html">Divisions Planner</a>
+                <a href="Settings.html">Settings</a>
+                <a href="info.html" class="active">Info</a>
+            </div>
+        </header>
+        <h2 style="margin: 15px 0px 50px 0px;"><strong>Server Info</strong></h2>
+        <div>
+            <div class="info">
+                <div>
+                    <h4>This Server IP Adress(s):</h4>
+                </div>
+                <hr class="line2">
+                <div>
+                    <h4>Server home directory:</h4>
+                    <div class="serverdiv"></div>
+                </div>
+                <hr class="line2">
+                <div>
+                    <h4>Divisions, players and games backup files directory:</h4>
+                </div>
+                <hr class="line2">
+            </div>
+            <div class="info2">
+                <div class="serverdiv serverdiv1">[192.168.1.102][192.168.56.1]</div>
+                <div class="serverdiv serverdiv2">C:\Users\HARDMED\Desktop\TKDScoringServer-no-jre-10.5.11\bin</div>
+                <div class="serverdiv serverdiv3">C:\Users\HARDMED\Desktop\TKDScoringServer-no-jre-10.5.11\bin\backup</div>
+            </div>
+            <p>The server creates backup files automatically of your old divisions, players and games every time the server is restarted.</p>
+            <p>You can also export and import the division/games/players as Excel files.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

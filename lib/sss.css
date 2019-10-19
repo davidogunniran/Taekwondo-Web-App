@@ -1,0 +1,18 @@
+:root {
+
+/* COLOR FROM ASSETS PANEL */
+--color_light_Theme__Base_Low_20_Black: rgba(0,0,0,51);
+--color_light_Theme__Base_Medium_Low_40_Black: rgba(0,0,0,102);
+--color_light_Theme__Alt_Base_High_100_White: rgba(255,255,255,255);
+--color_accent__Accent_100_Accent: rgba(0,120,215,255);
+--color_light_Theme__Base_High_100_Black: rgba(0,0,0,255);
+--color_light_Theme__Alt_Medium_60_White: rgba(255,255,255,153);
+--color_light_Theme__Base_Medium_60_Black: rgba(0,0,0,153);
+--color_light_Theme__List_Low_10_Black: rgba(0,0,0,26);
+--color_accent__List_Accent_Low_40_Accent: rgba(0,120,215,102);
+--color_light_Theme__Base_Medium_High_80_White: rgba(0,0,0,204);
+--color_light_Theme__Alt_Medium_Low_40_White: rgba(255,255,255,102);
+--color_light_Theme__Alt_Medium_High_80_White: rgba(255,255,255,204);
+--color_light_Theme__Alt_Low_20_White: rgba(255,255,255,51);
+
+}

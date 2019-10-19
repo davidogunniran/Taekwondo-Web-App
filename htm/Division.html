@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Division</title>
+        <meta name="Aspire" content="">
+        <link rel="stylesheet" href="../css/tkd.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="qmark">?</div>
+            <h1 style="display: inline-block; margin-left: 30px;">Division</h1>
+            <!-- sub section containing major elements -->
+            <div class="majorsection">
+                <!-- division header -->
+                <div class="divheader">
+                    <h3 style="padding-left: 20px;">Division</h3>
+                    <div>
+                        <ul class="divcolors">
+                            <li class="coltitle">Color:</li>
+                            <li><form>
+                                <input type="checkbox" name="" value="black">
+                            BLACK
+                            </form></li>
+                            <li><form>
+                                <input type="checkbox" name="" value="black">
+                            RED
+                            </form></li>
+                            <li><form>
+                                <input type="checkbox" name="" value="black">
+                            BLUE
+                            </form></li>
+                            <li><form>
+                                <input type="checkbox" name="" value="black">
+                            GREEN
+                            </form></li>
+                            <li><form>
+                                <input type="checkbox" name="" value="black">
+                            YELLOW
+                            </form></li>
+                        </ul>
+                        <ul class="divgender">
+                            <li>Gender:</li>
+                            <li>
+                                <form>
+                                <input type="checkbox" name="" value="black">
+                                Male
+                                </form>
+                            </li>
+                            <li>
+                                <form>
+                                <input type="checkbox" name="" value="black">
+                                Female
+                                </form>
+                            </li>
+                        </ul>
+                        <ul class="divdivision">
+                            <li>
+                                <form>
+                                    <select>
+                                        <option>Any Division</option>
+                                        <option>null</option>
+                                    </select>
+                                </form>
+                            </li>
+                            <li style="margin-left: 234px;">
+                                <form>
+                                <input type="checkbox" name="" value="black">
+                                Show only divisions with registered players
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of d ivision header -->
+                
+                <!-- form content -->
+                <div class="round">
+                    <h3>Round</h3>
+                    <select>
+                        <option>Division Round 1</option>
+                        <option>null</option>
+                    </select>
+                    <h3>First Player Name</h3>
+                    <select>
+                        <option>-</option>
+                        <option>null</option>
+                    </select>
+                    <h3>Second Player Name</h3>
+                    <select>
+                        <option>-</option>
+                        <option>null</option>
+                    </select>
+                    <h3>Court</h3>
+                    <select>
+                        <option>Court</option>
+                        <option>null</option>
+                    </select>
+                    <div>
+                        <h3>Start Time</h3>
+                        <input type="date" name="date">
+                        <input type="time" name="time">
+                        <p style="display: inline-block; font-size: 20px;">Please select the estimated start date and time</p>
+                    </div>
+                    <h3>End Time</h3>
+                    <input type="text" class="endtime">
+                    <h3>Notes</h3>
+                    <textarea style="padding-bottom: 50px;" rows="4" cols="50">
+                    </textarea>
+                    <div class="divbutton">
+                        <input type="button" value="Save" class="button">
+                        <input type="button" value="Exit" class="button">
+                    </div>
+                <!-- end of form content -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

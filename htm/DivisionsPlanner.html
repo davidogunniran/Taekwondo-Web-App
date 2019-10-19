@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Players Manager</title>
+    <meta name="author" content="">
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/tkd.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary btna">Export Games/Divisions/Players data to Excel file</button>
+                <button type="button" class="btn btn-primary btna">Import Games/Divisions/Players data from Excel file</button>
+                <button type="button" class="btn btn-primary btna">Exit</button>
+            </div>
+            <div class="topnav">
+                <a href="Games Planner.html">Games Planner</a>
+                <a href="PlayersManager.html">Players Manager</a>
+                <a href="View Draw.html">View Draw</a>
+                <a href="DivisionsPlanner.html" class="active">Divisions Planner</a>
+                <a href="Settings.html">Settings</a>
+                <a href="info.html">Info</a>
+            </div>
+            <div>
+                <div class="addPlayer"><a href="#"><img src="../img/open.png" alt="add Player"><strong>Add Player</strong></a></div>
+                <form role="form">
+                    <div class="form-group">
+                        <select class="form-control select1">
+                            <option>Any Division</option>
+                            <option>null</option>
+                        </select>
+                        <label>Age</label>
+                        <select class="form-control select">
+                            <option>Any Age</option>
+                            <option>null</option>
+                        </select>
+                        <label>Weight</label>
+                        <select class="form-control select">
+                            <option>Any Weight</option>
+                            <option>null</option>
+                        </select>
+                        <input type="text" name="textfield" class="textfield disabled form-control">
+                    </div>
+                </form>
+            </div>
+        </header>
+        <div>
+            <table class="table table-bordered table2">
+                <thead>
+                    <tr class="tcenter">
+                        <th>#</th>
+                        <th>Division</th>
+                        <th>Age Restriction</th>
+                        <th>Min Age</th>
+                        <th>Max Age</th>
+                        <th>Weight Restricition</th>
+                        <th>Min Weight</th>
+                        <th>Max Weight</th>
+                        <th>Gender</th>
+                        <th>Notes</th>
+                        <th><pre>    </pre></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="black">
+                        <td class="tdigit">1</td>
+                        <td>Female 14-15 Years Black belt 42-44Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>42 Kg</td>
+                        <td>44 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">2</td>
+                        <td>Female 16-17 Years Black belt 42-44Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>42 Kg</td>
+                        <td>44 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">3</td>
+                        <td>Female 14-15 Years Black belt 44-46Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>44 Kg</td>
+                        <td>46 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">4</td>
+                        <td>Female 16-17 Years Black belt 44-46Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>44 Kg</td>
+                        <td>46 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">5</td>
+                        <td>Female 16-17 Years Black belt 44-46Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>44 Kg</td>
+                        <td>46 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td class="tdigit">6</td>
+                        <td>Female 16-17 Years Black belt 46-49Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>46 Kg</td>
+                        <td>49 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">7</td>
+                        <td>Female 14-15 Years Black belt 49-52Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>49 Kg</td>
+                        <td>52 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">8</td>
+                        <td>Female 16-17 Years Black belt 49-52Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>49 Kg</td>
+                        <td>52 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">9</td>
+                        <td>Female 14-15 Years Black belt 52-55Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>52 Kg</td>
+                        <td>55 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">10</td>
+                        <td>Female 16-17 Years Black belt 52-55Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>52 Kg</td>
+                        <td>55 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">11</td>
+                        <td>Female 14-15 Years Black belt 55-59Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>55 Kg</td>
+                        <td>59 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">12</td>
+                        <td>Female 16-17 Years Black belt 55-59Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>55 Kg</td>
+                        <td>59 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr class="black">
+                    <tr class="black">
+                        <td class="tdigit">13</td>
+                        <td>Female 14-15 Years Black belt 59-63Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>59 Kg</td>
+                        <td>63 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">14</td>
+                        <td>Female 16-17 Years Black belt 59-63Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>59 Kg</td>
+                        <td>63 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">15</td>
+                        <td>Female 14-15 Years Black belt 63-68Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>63 Kg</td>
+                        <td>68 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">16</td>
+                        <td>Female 16-17 Years Black belt 63-68Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>63 Kg</td>
+                        <td>68 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td  class="tdigit">17</td>
+                        <td>Female 14-15 Years Black belt over 68Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Over</td>
+                        <td>68 Kg</td>
+                        <td>0 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td class="tdigit">18</td>
+                        <td>Female 14-15 Years Black belt over 68Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Over</td>
+                        <td>68 Kg</td>
+                        <td>0 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td class="tdigit">19</td>
+                        <td>Female 14-15 Years Black belt under 42Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Under</td>
+                        <td>0 Kg</td>
+                        <td>42 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="black">
+                        <td class="tdigit">20</td>
+                        <td>Female 14-15 Years Black belt under 42Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Under</td>
+                        <td>0 Kg</td>
+                        <td>42 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="blue">
+                        <td class="tdigit">21</td>
+                        <td>Female 14-15 Years Blue belt 42-44Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>42 Kg</td>
+                        <td>44 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr class="blue">
+                        <td class="tdigit">22</td>
+                        <td>Female 16-17 Years Blue belt 42-44Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>42 Kg</td>
+                        <td>44 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr  class="blue">
+                        <td class="tdigit">23</td>
+                        <td>Female 14-15 Years Blue belt 44-46Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>44 Kg</td>
+                        <td>46 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr  class="blue">
+                        <td class="tdigit">24</td>
+                        <td>Female 16-17 Years Blue belt 44-46Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>44 Kg</td>
+                        <td>46 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr  class="blue">
+                        <td class="tdigit">25</td>
+                        <td>Female 14-15 Years Blue belt 46-49Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>46 Kg</td>
+                        <td>49 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr  class="blue">
+                        <td class="tdigit">26</td>
+                        <td>Female 16-17 Years Blue belt 46-49Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>46 Kg</td>
+                        <td>49 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr  class="blue">
+                        <td class="tdigit">27</td>
+                        <td>Female 14-15 Years Blue belt 49-52Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>49 Kg</td>
+                        <td>52 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr  class="blue">
+                        <td class="tdigit">28</td>
+                        <td>Female 16-17 Years Blue belt 49-52Kg</td>
+                        <td>Between</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>Between</td>
+                        <td>49 Kg</td>
+                        <td>52 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                    <tr  class="blue">
+                        <td class="tdigit">29</td>
+                        <td>Female 14-15 Years Blue belt 52-55Kg</td>
+                        <td>Between</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>Between</td>
+                        <td>52 Kg</td>
+                        <td>55 kg</td>
+                        <td>Female</td>
+                        <td></td>
+                        <td class="tdigit">
+                            <button type="button" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i,800&display=swap');
+body {
+    margin: 0 auto;
+    background-color: #8080804d;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* --------------------game preferences------------- */
+.btn-group button {
+    background-color: #f5e020; 
+    border: 1px solid black; 
+    color:rgb(8, 1, 1); 
+    padding: 10px 63px; 
+    cursor: pointer; 
+    width: 100%;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none;
+  }
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.btn-group button:hover {
+   background-color: #3e8e41;
+  }
+table tbody tr td select {
+    width: 50px;
+}
+.red-corner{
+background-color: red;
+width:500px;
+color:white;
+/* display: none */
+}
+.center{
+    width:500px;
+    height: 400px;
+    text-align:center; 
+}
+.phone{
+    position: relative;
+top: 20px;
+text-align:center;
+font-size: 30px; 
+}
+.game-time{
+    position: relative;
+    top: 28px;
+    text-align:center;
+    font-size: 100px; 
+    background-color:yellow; 
+    /* height: 26%; */
+}
+.blue-corner{
+    background-color:blue;
+    width:500px;
+    color:white;
+    /* display: none; */
+}
+.sun{
+    display: inline-block;
+    font-size:30px; 
+    height: 100%;
+}
+#fm{
+    
+    font-size:100px; 
+}
+.soon{
+    font-size:20px;
+    text-align: center;
+}
+.dell{
+    font-size:20px;
+    text-align: center;
+}
+.magi{
+    font-size:200px;
+}
+.sack{
+    background-color: white;
+    color: black;
+}
+.muck{
+    background-color:blue; 
+}
+.hamid{
+    background-color: red;
+}
+.h2{
+    background-color: red;
+}
+.score-title2 {
+    /* display:none; */
+    margin-left: 370px;
+    padding-bottom: 100px;
+}
+.tolu{
+    background-color:black; 
+    display:flexbox;
+}
+.btn{
+    background-color:black;
+    height: 70px;
+}
+.winner{
+    height: 40px; 
+    background-color:  black;
+    display:inline; 
+}
+.winner1{
+    float: left;
+    padding-right: 300px;
+}
+.btn1 {
+    float:left;
+    padding-left: 10px;
+}
+.btn2 {
+    float: right;
+}
+.btn1 button {
+    width: 80px;
+    height: 30px;
+}
+.btn2 button {
+    width: 80px;
+    height: 30px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.game-round{
+    font-size:100px;  
+}
+
+/*--------------------------- start of 2ndpage */
+
+.btn-group button {
+    background-color: #f5e020; 
+    border: 1px solid black; 
+    color:rgb(8, 1, 1); 
+    padding: 10px 3px; 
+    cursor: pointer; 
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+  }
+.btn-group {
+    width: 100%;
+}
+.tomi{
+    position: relative;
+    left: 50%;
+    margin-bottom: 50px;
+    width:5.3%;
+}
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.btn-group button:hover {
+    background-color: #3e8e41;
+  }
+.zee{
+    position: absolute;
+    left:30px;
+    margin-top:60px;
+}
+
+.kick{
+    float:right;
+    position: absolute;
+    right:30px;
+    margin-top:80px; 
+}
+
+/* ---------------server ip adress -------------------*/
+.servertable{
+    height: 600px;
+    border-style: solid;
+    margin-bottom: 100px;
+    border
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game Preferences</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <div class="btn-group">
+            <button>Reset Game</button>
+            <button>Referees setup</button>
+            <button>Games Options</button>
+            <button>Server Preferences</button>
+            <button>Player & Draws</button>
+            <button>Sudden death round</button>
+        </div>
+        <!-- end of yellowheader -->
+        <!-- yellow header -->
+        <h3>Game Preferences</h3>
+        <div class="tomi">
+          <input type="button" value="Exit Setup">
+        </div>
+        <table class="table">
+            <tbody>
+              <tr>
+                <td><h4>Please select the number of rounds</h4>
+                </td>
+                <td>
+                  <select>
+                    <option>3</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><h4>Round Length</h4>
+                  <p>Adjust the duration of each round in seconds</p>
+                </td>
+                <td>
+                  <select>
+                    <option>120</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><h4>Enable "Sudden death"(Golden Points) round</h4>
+                  <p>In the event of a tied scores after the end last round, a supplemental round also known as the sudden death round, will be conducted after a rest following the last round. Any point, be it Gam-jeom or Kyong-go, from the previous three rounds shall not be taken into consideration in the sudden death round</p>
+                </td>
+                <td>
+                  <form>
+                    <input type="checkbox" class="form-control">
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td><h4>Sudden death round length</h4>
+                  <p>Adjust the duration of each sudden death round in seconds</p>
+                </td>
+                <td>
+                  <select>
+                    <option>120</option>
+                  </select>
+                </td>
+                </tr>
+                <tr>
+                  <td><h4>Break Period</h4>
+                    <p>Please select the rest period between rounds</p>
+                  </td>
+                  <td>
+                    <select>
+                      <option>60</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h4>Time-out Length</h4>
+                    <p>Time-out Length</p>
+                  </td>
+                  <td>
+                    <select>
+                      <option>60</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h4>Point Gap</h4>
+                    <p>In this case, the scores between the competitors determines the winners. When there is a mass point gap between the competitor, the march will be stopped and a winner declared</p>
+                  </td>
+                  <td>
+                    <select>
+                      <option>20</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h4>Point Ceiling</h4>
+                    <p>Win by superiority. when a competitor scores a maximum of "Ceiling Points", the match shallbe stopped and a winner declared</p>
+                  </td>
+                  <td>
+                    <select>
+                      <option>100</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h4>Maximum Penalty points</h4>
+                    <p>When a player receives the maximum penalty points through Kyon-go (Half-time) and / or Gam/jeong (full points) the match is stopped and a winner is declared.</p>
+                  </td>
+                  <td>
+                    <select>
+                      <option>5</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h4>Points for the body button Tap event</h4>
+                    <p>The total points awarded when the referee tap the body button</p>
+                  </td>
+                  <td>
+                    <select>
+                      <option>1</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h4>Points for the body button Swipe event</h4>
+                    <p>The total points awarded when the referee Swipe the body button</p>
+                  </td>
+                  <td>
+                    <select>
+                      <option>2</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h4>Points for head button Tap event</h4>
+                    <p>The total points awarded when the referee tap the head button</p>
+                  </td>
+                  <td>
+                    <select>
+                      <option>3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h4>Points for head button Swipe event</h4>
+                    <p>The total points awarded when the referee Swipe the head button</p>
+                  </td>
+                  <td>
+                    <select>
+                      <option>4</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h4>Enable warning penalties(Kyong-go)</h4>
+                    <p>Show the warning penalites(Kyong-go) control button and display the warning for each player</p>
+                  </td>
+                  <td>
+                    <form>
+                      <input type="checkbox" class="form-control">
+                    </form>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h4>Deduction penalties(Kyong-go)</h4>
+                    <p>Show the warning penalites(Kyong-go) control button and display the deduction for each player</p>
+                  </td>
+                  <td>
+                    <form>
+                      <input type="checkbox" class="form-control">
+                    </form>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>
